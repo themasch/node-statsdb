@@ -1,0 +1,12 @@
+{
+    "name": "statsdb",
+    "description": "statsd backend",
+    "keywords": ["statsd", "redis", "statistics", "backend"],
+    "author": "Mark Schmale <masch@masch.it>",
+    "dependencies": {
+        "redis": "*"
+    },
+    "devDependencies": {
+        "tape": "*"
+    }
+}
