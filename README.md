@@ -9,7 +9,7 @@ Just pipe everything into [redis](http://redis.io) and be happy.
 
 # Configuration
 
-```json
+```js
 {
 //  ...
 // all of this is optional
