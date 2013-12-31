@@ -1,17 +1,17 @@
 # statsdb
 
-the most simple statsd backend.
+the probably most simple [statsd](https://github.com/etsy/statsd) backend.
 Just pipe everything into [redis](http://redis.io) and be happy.
 
 # Installation
 
-**npm coming soon**
+*npm coming soon*
 
 # Configuration
 
 ```json
 {
-  ...
+//  ...
 // all of this is optional
 , statsdbRedisPort: 1337
 , statsdbRedisHost: 'localhost'
@@ -21,7 +21,6 @@ Just pipe everything into [redis](http://redis.io) and be happy.
 }
 
 ```
-
 # TODO
 
-A lot. Livetime of values, garbage collection, auth on redis, errorhandling...
+A lot. Lifetime of values, garbage collection, authentication on redis, error handling...
