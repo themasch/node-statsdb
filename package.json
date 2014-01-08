@@ -1,6 +1,7 @@
 {
     "name": "statsdb",
     "description": "statsd backend",
+    "version": "0.0.1",
     "keywords": ["statsd", "redis", "statistics", "backend"],
     "author": "Mark Schmale <masch@masch.it>",
     "dependencies": {

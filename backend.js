@@ -52,6 +52,6 @@ statsdb.status = function(write)
 
 statsdb.store = function(time, type, key, value)
 {
-    var encoded = time + "|" + value + "|"+ type
-    this.client.zadd(key, time, encoded)
+    var encoded = time + "|" + value
+    this.client.zadd(type + '.' + key, time, encoded)
 }
