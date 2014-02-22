@@ -4,6 +4,8 @@ module.exports = statsdb
 
 statsdb.init = function(startup, config, events, logger)
 {
+    config = config || {}
+    config.prefix = config.prefix || ''
     var state = {
         config: config,
         logger: logger,
@@ -53,5 +55,6 @@ statsdb.status = function(write)
 statsdb.store = function(time, type, key, value)
 {
     var encoded = time + "|" + value
-    this.client.zadd(type + '.' + key, time, encoded)
+    var metric_key = this.config.prefix + type + '.' + key
+    this.client.zadd(metric_key, time, encoded)
 }
